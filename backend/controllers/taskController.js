@@ -45,6 +45,7 @@ const addTask = async (req, res) => {
         )
 }
 const removeTask = (req, res) => {
+    
     const { id } = req.body;
     console.log("id: ", id);
     taskModel.findByIdAndDelete(id)
