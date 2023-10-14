@@ -16,13 +16,13 @@ function Header() {
         <div>
             <nav className='header bg-slate-200 flex justify-between items-center'>
                 <div className="logo w-1/4 text-center">
-                    <NavLink to="/">Todo App</NavLink>
+                    <NavLink to="/">L&TODO</NavLink>
                 </div>
                 <div className='flex justify-between'>
                     {
                         token ? (
                             <div className='flex items-center justify-center'>
-                                <p className='mr-5'>welcome, <span className=' text-xl text-blue-800 capitalize'>{user.name}</span></p>
+                                <p className='mr-5'>welcome In L&Todo, <span className=' text-xl text-blue-800 capitalize'>{user.name}</span></p>
                                 <button onClick={logout} className="logout mr-4">Logout</button>
                             </div>
                         ) : (

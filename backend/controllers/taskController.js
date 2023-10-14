@@ -31,7 +31,7 @@ const addTask = async (req, res) => {
     const { title, description } = req.body;
     const userId = req.user.id;
     const user = await userModel.find({_id: userId});
-    const newTask = new taskModel({ title, description, completed: false, userId })
+    const newTask = new taskModel({ title, description, terminée: false, userId })
     newTask.save()
         .then(() => {
             sendMail(user[0].email, "Task Added", title, description)

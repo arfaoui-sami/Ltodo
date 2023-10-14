@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 body{
-  background-color: rgb(188, 214, 214);
+  background-image: url('../todo.jpg');
+  background-size: cover;
   font-family: 'Poppins', sans-serif;
 }
 /* customize scroll bar */
@@ -11,7 +12,7 @@ body{
   background: #f1f1f1;
 }
 ::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 255, 0.705);
+  background: rgba(125, 193, 252, 0.705);
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
@@ -19,7 +20,7 @@ body{
 }
 .active, .logout{
   color: white;
-  background-color: rgb(58, 58, 197);
+  background-color: rgb(182, 182, 246);
   font-weight: bolder;
   padding: 5px 10px;
   border-radius: 50px;
@@ -37,7 +38,7 @@ task-container{
 }
 .outlet{
   height:80vh;
-  background-color: whitesmoke;
+  background-color:transparent;
   border-radius: 10px;
   padding: 1rem;
   overflow: auto;

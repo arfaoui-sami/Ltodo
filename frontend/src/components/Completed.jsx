@@ -9,7 +9,7 @@ function Completed() {
                 (tasks.length !== 0) ? (
                     tasks.map((task, index) => {
                         return (
-                            task.completed && <CompletedTask
+                            task.terminée && <CompletedTask
                                 key={index}
                                 task={task}
                                 id={index}

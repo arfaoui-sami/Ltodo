@@ -8,7 +8,7 @@ function taskReducer(tasks, action) {
                 {
                     title: action.title,
                     description: action.description,
-                    completed: false
+                    terminée: false
                 }
             ]
         }
@@ -23,7 +23,7 @@ function taskReducer(tasks, action) {
                 if (index === action.id) {
                     return {
                         ...task,
-                        completed: !task.completed
+                        terminée: !task.terminée
                     }
                 }
                 return task
